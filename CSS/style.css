@@ -9,8 +9,9 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../images/bg.jpg") top right no-repeat;
+  background: url("../images/beso-bg.jpg") top right no-repeat;
   background-size: cover;
+  filter: grayscale(1) brightness(0.25);
   left: 0;
   right: 0;
   top: 0;
@@ -40,6 +41,10 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.mb-10-rem {
+  margin-bottom: 10rem;
 }
 
 /*--------------------------------------------------------------
@@ -89,8 +94,11 @@ h6 {
 }
 
 #header img {
+  width: 265px;
   padding: 0;
   margin: 0;
+  transition: ease-in-out 0.5s;
+  margin-bottom: 0.5rem;
 }
 
 #header .social-links {
@@ -133,6 +141,9 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .mb-10-rem {
+    margin-bottom: 0;
   }
 }
 
@@ -295,6 +306,17 @@ h6 {
 #header.header-top h1 {
   margin-right: auto;
   font-size: 36px;
+  display: none;
+}
+
+#header.header-top img {
+  width: 200px;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+#header.header-top .mb-10-rem {
+  margin-bottom: 0;
 }
 
 #header.header-top .container {
@@ -374,11 +396,17 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
+}
+
+.section-title p.section-summary {
+  font-size: initial;
+  font-weight: initial;
+  text-transform: initial;
 }
 
 /*--------------------------------------------------------------
@@ -414,7 +442,7 @@ section .container {
   border: 3px solid #ffda21;
 }
 
-.about-me .personal-photo-cont img{
+.about-me .personal-photo-cont img {
   transform: scale(1.25) translate(-7px, 0px);
 }
 
@@ -426,6 +454,7 @@ section .container {
 }
 
 .counts .count-box {
+  height: 100%;
   padding: 30px 30px 25px 30px;
   width: 100%;
   position: relative;
@@ -534,6 +563,7 @@ section .container {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
+  aspect-ratio: 1;
   border-radius: 50%;
   margin: -40px 0 0 40px;
   position: relative;
@@ -582,6 +612,7 @@ section .container {
   border-radius: 6px;
   position: relative;
   z-index: 1;
+  min-height: 189px;
 }
 
 .testimonials .owl-nav,
@@ -686,7 +717,7 @@ section .container {
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #fff;
+  color: #383838;
 }
 /*--------------------------------------------------------------
   # Portfolio Details
@@ -947,6 +978,7 @@ section .container {
 }
 
 .portfolio .icon-box {
+  width: 100%;
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
@@ -1020,5 +1052,5 @@ section .container {
 
 .portfolio .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #fff;
+  color: #383838;
 }
