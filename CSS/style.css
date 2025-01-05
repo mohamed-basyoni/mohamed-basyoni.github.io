@@ -9,7 +9,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: url("../images/beso-bg.jpg") top right no-repeat;
+  background: url("../images/beso-bg2.jpg") top right no-repeat;
   background-size: cover;
   filter: grayscale(1) brightness(0.25);
   left: 0;
@@ -447,7 +447,7 @@ section .container {
 }
 
 .about-me .personal-photo-cont img {
-  transform: scale(1.25) translate(-7px, 0px);
+  transform: scale(1.5) translate(9px, 31px) rotateY(180deg);
 }
 
 /*--------------------------------------------------------------
