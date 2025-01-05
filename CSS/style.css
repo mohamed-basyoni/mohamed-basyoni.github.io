@@ -25,6 +25,16 @@ body::before {
   }
 }
 
+@media (max-width: 768px) {
+  body::before {
+    background: url(../images/beso-bg3.jpg) center right no-repeat;
+    background-size: cover;
+  }
+
+  .about-me .personal-photo-cont {
+    height: 68vh;
+  }
+}
 a {
   color: #ffda21;
 }
